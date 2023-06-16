@@ -46,6 +46,7 @@ class CourseController extends Controller
                 'lname' => $student->lname,
                 'email' => $student->profile->email,
                 'year' => $student->profile->year,
+                'course_name' => $student->profile->course->course_name,
             ];
         });
 
